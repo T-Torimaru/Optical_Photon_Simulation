@@ -43,4 +43,29 @@ $ ./OpNovice -m ../Optical_Photon_Simulation/optPhoton.mac
   * visualization attributes (color...)
   * have a sensitivity to MPPC
 
-* 
+* OpNoviceEventAction
+
+  * Energy deposits at the scintillator and the trigger counter are filled into a root file
+
+* OpNovicePhysicsList
+
+  * Define physics processes
+
+* OpNovicePrimaryGeneratorAction
+
+  * Define initial states of Events, for instance, beam energy, the number of events, incident position, and etc.
+  * optPhoton.mac is substitute for it.
+
+* OpNoviceRunAction
+
+  * Create root file and branches
+  * Start and stop a run
+
+* OpNoviceStackingAction
+
+  * count excited scintillation lights
+
+* OpNoviceSteppingAction
+
+  * You can understand information of each of steps
+    * momentum, position, energy, step length, and etc...
