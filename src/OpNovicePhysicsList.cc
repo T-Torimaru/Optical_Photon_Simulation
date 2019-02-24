@@ -75,8 +75,8 @@ OpNovicePhysicsList::OpNovicePhysicsList()
   // G4Cerenkov::SetMaxBetaChangePerStep(10.0);
   // G4Cerenkov::SetTrackSecondariesFirst(true);
 
-  G4Scintillation::SetScintillationYieldFactor(1.);
-  G4Scintillation::SetTrackSecondariesFirst(true);
+  // G4Scintillation::SetScintillationYieldFactor(1.);
+  // G4Scintillation::SetTrackSecondariesFirst(true);
 
   fMessenger = new OpNovicePhysicsListMessenger(this);
 }
@@ -229,6 +229,8 @@ void OpNovicePhysicsList::ConstructOp()
 {
   //  G4Cerenkov* cerenkovProcess = new G4Cerenkov("Cerenkov");
   G4Scintillation* scintillationProcess = new G4Scintillation("Scintillation");
+  scintillationProcess->SetScintillationYieldFactor(1.);
+  scintillationProcess->SetTrackSecondariesFirst(true);
   G4OpAbsorption* absorptionProcess = new G4OpAbsorption();
   G4OpRayleigh* rayleighScatteringProcess = new G4OpRayleigh();
   G4OpMieHG* mieHGScatteringProcess = new G4OpMieHG();
@@ -243,12 +245,13 @@ void OpNovicePhysicsList::ConstructOp()
   
   // Use Birks Correction in the Scintillation process
   if(!G4Threading::IsWorkerThread())
-  {
-    G4EmSaturation* emSaturation =
-              G4LossTableManager::Instance()->EmSaturation();
-    G4Scintillation::AddSaturation(emSaturation);
-  }
-
+    {
+      G4EmSaturation* emSaturation =
+	G4LossTableManager::Instance()->EmSaturation();
+      //    G4Scintillation::AddSaturation(emSaturation);
+      scintillationProcess->AddSaturation(emSaturation);    
+    }
+  
   theParticleIterator->reset();
   while( (*theParticleIterator)() ){
     G4ParticleDefinition* particle = theParticleIterator->value();
