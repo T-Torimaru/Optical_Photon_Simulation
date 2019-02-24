@@ -1,0 +1,127 @@
+# /control/verbose 2
+# #/tracking/verbose 3
+# /tracking/verbose 1
+# #
+# #/gun/particle opticalphoton
+# /gun/particle e-
+# /gun/energy 2.3 MeV
+# #
+# /gun/direction 0 0 -1
+# #/OpNovice/gun/optPhotonPolar
+# #/run/beamOn 1
+# #
+## /gun/position 7.5 7.5 4.9 mm
+# #/gun/direction 1 1 1
+# #/OpNovice/gun/optPhotonPolar
+# /run/beamOn 1
+/control/verbose 0
+#/tracking/verbose 3
+/tracking/verbose 0
+#
+#/gps/direction 0 0 -1
+#/gun/particle opticalphoton
+/gps/particle e-
+#/gps/energy 2.3 MeV
+#/gps/energy 3 GeV
+#/gps/energy 2 MeV
+#
+/gps/direction 0 0 -1
+#/OpNovice/gun/optPhotonPolar
+#/run/beamOn 1
+#
+#/gps/position 7.5 7.5 4.9 mm
+#/gun/direction 1 1 1
+#/OpNovice/gun/optPhotonPolar
+
+/gps/pos/type Plane
+/gps/pos/shape Circle
+#/gps/pos/shape Square
+/gps/pos/centre 12.5 12.5 4.9 mm
+#/gps/pos/centre 15 15 1 mm
+# /gps/pos/halfx 2.5 mm
+# /gps/pos/halfy 2.5 mm
+ 
+# #/gps/pos/rot1 0.0 0.0 1.0
+/gps/pos/rot1 1.0 0.0 0.00000001
+# #/gps/pos/rot2 0.0 1.0 0.0
+/gps/pos/rot2 0.0 1.0 0.0
+/gps/pos/radius 0.5 mm
+
+# #/gps/direction  0 1 0
+# #
+ /gps/ang/type iso
+# #/gps/ang/type cos
+# #/gps/ang/mintheta 170. deg
+#/gps/ang/mintheta 171.4 deg
+/gps/ang/mintheta 180. deg
+# #/gps/ang/maxtheta 180. deg
+# #/gps/ang/minphi 0. deg
+# #/gps/ang/maxphi 360. deg
+
+#/gps/energy 3 GeV
+# #	        
+ /gps/ene/type User
+ /gps/hist/type energy
+#/gps/hist/point 0.0 0.
+/gps/hist/point 0.04 540
+/gps/hist/point 0.08 606
+/gps/hist/point 0.12 652
+/gps/hist/point 0.16 775
+/gps/hist/point 0.2 732
+/gps/hist/point 0.24 848
+/gps/hist/point 0.28 950
+/gps/hist/point 0.32 983
+/gps/hist/point 0.36 1044
+/gps/hist/point 0.4 1089
+/gps/hist/point 0.44 1121
+/gps/hist/point 0.48 1116
+/gps/hist/point 0.52 1252
+/gps/hist/point 0.56 1251
+
+/gps/hist/point 0.6 1277
+/gps/hist/point 0.64 1314
+/gps/hist/point 0.68 1325
+/gps/hist/point 0.72 1392
+/gps/hist/point 0.76 1414
+
+
+
+/gps/hist/point 0.8 1389
+/gps/hist/point 0.84 1428
+/gps/hist/point 0.88 1377
+/gps/hist/point 0.92 1400
+/gps/hist/point 0.96 1422
+/gps/hist/point 1 1370
+/gps/hist/point 1.04 1384
+/gps/hist/point 1.08 1335
+/gps/hist/point 1.12 1342
+/gps/hist/point 1.16 1356
+/gps/hist/point 1.2 1289
+/gps/hist/point 1.24 1168
+/gps/hist/point 1.28 1170
+/gps/hist/point 1.32 1132
+/gps/hist/point 1.36 1087
+/gps/hist/point 1.4 1031
+/gps/hist/point 1.44 1038
+/gps/hist/point 1.48 952
+/gps/hist/point 1.52 890
+/gps/hist/point 1.56 829
+/gps/hist/point 1.6 776
+/gps/hist/point 1.64 662
+/gps/hist/point 1.68 621
+/gps/hist/point 1.72 588
+/gps/hist/point 1.76 550
+/gps/hist/point 1.8 420
+/gps/hist/point 1.84 430
+/gps/hist/point 1.88 368
+/gps/hist/point 1.92 270
+/gps/hist/point 1.96 236
+/gps/hist/point 2 175
+/gps/hist/point 2.04 144
+/gps/hist/point 2.08 97
+/gps/hist/point 2.12 71
+/gps/hist/point 2.16 41
+/gps/hist/point 2.2 16
+/gps/hist/point 2.24 11
+
+/run/beamOn 10000
