@@ -31,7 +31,7 @@ $ ./OpNovice -m ../Optical_Photon_Simulation/optPhoton.mac
 
 * optPhoton.mac in Optical_Photon_Simulation directory, not in build directory
 
-  * You can choose energy spectrum of Sr90 or a fixed energy beam
+  * You can choose energy spectrum of Sr90 or a fixed energy beam and define an initial state of events
 
 * OpNoviceDetectorConstruction
 
