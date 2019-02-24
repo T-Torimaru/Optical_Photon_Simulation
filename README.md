@@ -29,7 +29,7 @@ $ ./OpNovice -m ../Optical_Photon_Simulation/optPhoton.mac
 
 ## Contents
 
-* optPhoton.mac in Optical_Photon_Simulation directory, not in build directory
+* <u>optPhoton.mac</u> in Optical_Photon_Simulation directory, not in build directory
 
   * You can choose energy spectrum of Sr90 or a fixed energy beam
 
