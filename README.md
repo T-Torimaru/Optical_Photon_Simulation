@@ -29,8 +29,18 @@ $ ./OpNovice -m ../Optical_Photon_Simulation/optPhoton.mac
 
 ## Contents
 
-* <u>optPhoton.mac</u> in Optical_Photon_Simulation directory, not in build directory
+* optPhoton.mac in Optical_Photon_Simulation directory, not in build directory
 
   * You can choose energy spectrum of Sr90 or a fixed energy beam
+
+* OpNoviceDetectorConstruction
+
+  * geometry
+  * LY : Scintillation Efficiency
+    * Higher LY values make calculation time be longer because each of scintillation light tracks is calculated.
+  * PDE of MPPC
+  * surface state
+  * visualization attributes (color...)
+  * have a sensitivity to MPPC
 
 * 
