@@ -67,5 +67,5 @@ $ ./OpNovice -m ../Optical_Photon_Simulation/optPhoton.mac
 
 * OpNoviceSteppingAction
 
-  * You can understand information of each of steps
+  * You can get information of each of steps
     * momentum, position, energy, step length, and etc...
